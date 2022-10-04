@@ -1,0 +1,28 @@
+.features__list {
+  display: flex;
+  gap: 30px;
+}
+
+.features__item {
+  width: 270px;
+}
+
+.features__background {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--background-lite-color);
+}
+
+.features__titel {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--main-txt-cl);
+}

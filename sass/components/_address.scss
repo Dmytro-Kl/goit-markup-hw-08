@@ -1,0 +1,40 @@
+address {
+  font-style: normal;
+}
+
+.address__link {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  color: var(--footer-text-color);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__location {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  text-decoration: none;
+  color: var(--white-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__socials {
+  margin-right: 93px;
+}
+
+.address__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
