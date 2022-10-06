@@ -178,10 +178,18 @@
           <ul class="team__list">
             <li class="team__item">
               <img
-                src="./images/team/team1.jpg"
+                class="team_img"
+                srcset="
+                  ./images/team/team1_sm-@1x.png,
+                  ./images/team/team1_sm-@2x.png,
+                  ./images/team/team1_md-@1x.png,
+                  ./images/team/team1_md-@2x.png,
+                  ./images/team/team1_lg-@1x.png,
+                  ./images/team/team1_lg-@2x.png
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/team1_sm-@1x.png"
                 alt="Фото чоловіка в червоній сорочці та окулярах"
-                width="270"
-                height="260"
               />
               <div class="team__description">
                 <h3 class="team__description-title">Ігор Дем'яненко</h3>
@@ -245,10 +253,18 @@
 
             <li class="team__item">
               <img
-                src="./images/team/team2.jpg"
+                class="team_img"
+                srcset="
+                  ./images/team/team2_sm-@1x.png,
+                  ./images/team/team2_sm-@2x.png,
+                  ./images/team/team2_md-@1x.png,
+                  ./images/team/team2_md-@2x.png,
+                  ./images/team/team2_lg-@1x.png,
+                  ./images/team/team2_lg-@2x.png
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/team2_sm-@1x.png"
                 alt="Фото жінки в діловому костюмі та окуляках"
-                width="270"
-                height="260"
               />
               <div class="team__description">
                 <h3 class="team__description-title">Ольга Рєпіна</h3>
@@ -312,10 +328,18 @@
 
             <li class="team__item">
               <img
-                src="./images/team/team3.jpg"
+                class="team_img"
+                srcset="
+                  ./images/team/team3_sm-@1x.png,
+                  ./images/team/team3_sm-@2x.png,
+                  ./images/team/team3_md-@1x.png,
+                  ./images/team/team3_md-@2x.png,
+                  ./images/team/team3_lg-@1x.png,
+                  ./images/team/team3_lg-@2x.png
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/team3_sm-@1x.png"
                 alt="Фото чоловіка в блакитній сорочці"
-                width="270"
-                height="260"
               />
               <div class="team__description">
                 <h3 class="team__description-title">Микола Тарасов</h3>
@@ -379,10 +403,18 @@
 
             <li class="team__item">
               <img
-                src="./images/team/team4.jpg"
+                class="team_img"
+                srcset="
+                  ./images/team/team4_sm-@1x.png,
+                  ./images/team/team4_sm-@2x.png,
+                  ./images/team/team4_md-@1x.png,
+                  ./images/team/team4_md-@2x.png,
+                  ./images/team/team4_lg-@1x.png,
+                  ./images/team/team4_lg-@2x.png
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/team4_sm-@1x.png"
                 alt="Фото чоловіка в чорній футболці та окулярах"
-                width="270"
-                height="260"
               />
               <div class="team__description">
                 <h3 class="team__description-title">Михайло Єрмаков</h3>
@@ -449,7 +481,7 @@
 
       <!----- Customers ----->
 
-      <section class="customers section">
+      <!-- <section class="customers section">
         <div class="container">
           <h2 class="customers__title">Постійні клієнти</h2>
           <ul class="customers__list">
@@ -533,12 +565,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!----- footer ----->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__container container">
         <div class="footer__contact">
           <a class="logo logo__footer" href="./index.html"
@@ -621,30 +653,28 @@
             </li>
           </ul>
         </div>
-        <div>
-          <form class="subscription" action="subscription">
-            <span class="subscription__title">Підпишіться на розсилку</span>
-            <div class="subscription__box">
-              <label class="subscription__lable">
-                <input
-                  class="subscription__input"
-                  name="email"
-                  type="email"
-                  placeholder="E-mail"
-                  required
-                />
-              </label>
-              <button class="subscription__btn" type="submit">
-                Підписатися
-                <svg class="subscription__icon" width="24" height="24">
-                  <use href="./images/icons.svg#plane"></use>
-                </svg>
-              </button>
-            </div>
+        <div class="subscription">
+          <span class="subscription__title">Підпишіться на розсилку</span>
+          <form class="subscription_form" action="subscription_form">
+            <label class="subscription__lable">
+              <input
+                class="subscription__input"
+                name="email"
+                type="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="subscription__btn" type="submit">
+              Підписатися
+              <svg class="subscription__icon" width="24" height="24">
+                <use href="./images/icons.svg#plane"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!----- Modal window ----->
 
