@@ -19,42 +19,55 @@
   </head>
   <body class="page">
     <!-- header -->
-    <!-- <header class="header">
-      <nav class="nav container">
+    <header class="header">
+      <div class="header__container container">
         <a class="logo" href="./index.html">Web<span class="logo__black">Studio</span></a>
 
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="./index.html">Студія</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link current" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">Контакти</a>
-          </li>
-        </ul>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакти</a>
+            </li>
+          </ul>
 
-        <ul class="nav__list nav__list--contact">
-          <li class="nav__item">
-            <a class="nav__contact" href="info@devstudio.com">
-              <svg class="nav__icons" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__contact" href="tel:+380961111111">
-              <svg class="nav__icons" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header> -->
+          <ul class="nav__list nav__list--contact">
+            <li class="nav__item">
+              <a class="nav__contact" href="info@devstudio.com">
+                <svg class="nav__icons" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__contact" href="tel:+380961111111">
+                <svg class="nav__icons" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          type="button"
+          class="menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-btn__svg" width="40" height="40">
+            <use href="./images/icons.svg#open-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
 
     <!-- main -->
 
@@ -96,8 +109,6 @@
                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/img-1_sm-@1x.jpg"
                     alt="Відкритий ноутбук з сайтом Технокряк"
-                    width="370"
-                    height="294"
                   />
                   <div class="overlay__item">
                     <p class="overlay__text">
@@ -129,8 +140,6 @@
                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/img-2_sm-@1x.jpg"
                     alt="Хлопці грають в баскетбол"
-                    width="370"
-                    height="294"
                   />
                   <div class="overlay__item">
                     <p class="overlay__text">
@@ -163,8 +172,6 @@
                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/img-3_sm-@1x.jpg"
                     alt="Логотип ресторану Seafood"
-                    width="370"
-                    height="294"
                   />
                   <div class="overlay__item">
                     <p class="overlay__text">
@@ -197,8 +204,6 @@
                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/img-4_sm-@1x.jpg"
                     alt="Чорні навушники"
-                    width="370"
-                    height="294"
                   />
                   <div class="overlay__item">
                     <p class="overlay__text">
@@ -231,8 +236,6 @@
                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/img-5_sm-@1x.jpg"
                     alt="Дві коробки"
-                    width="370"
-                    height="294"
                   />
                   <div class="overlay__item">
                     <p class="overlay__text">
@@ -265,8 +268,6 @@
                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/img-6_sm-@1x.jpg"
                     alt="Монітор для компютера"
-                    width="370"
-                    height="294"
                   />
                   <div class="overlay__item">
                     <p class="overlay__text">
@@ -299,8 +300,6 @@
                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/img-7_sm-@1x.jpg"
                     alt="Відкритий журнал"
-                    width="370"
-                    height="294"
                   />
                   <div class="overlay__item">
                     <p class="overlay__text">
@@ -333,8 +332,6 @@
                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/img-8_sm-@1x.jpg"
                     alt="Бірка"
-                    width="370"
-                    height="294"
                   />
                   <div class="overlay__item">
                     <p class="overlay__text">
@@ -354,22 +351,12 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="overlay">
-                  <img
-                    class="overlay__img"
-                    srcset="
-                      ./images/portfolio/img-9_sm-@1x.jpg,
-                      ./images/portfolio/img-9_sm-@2x.jpg,
-                      ./images/portfolio/img-9_md-@1x.jpg,
-                      ./images/portfolio/img-9_md-@2x.jpg,
-                      ./images/portfolio/img-9_lg-@1x.jpg,
-                      ./images/portfolio/img-9_lg-@2x.jpg
-                    "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                    src="./images/portfolio/img-9_sm-@1x.jpg"
-                    alt="Чоловік працює на макбук"
-                    width="370"
-                    height="294"
-                  />
+                  <img class="overlay__img" srcset=" ./images/portfolio/img-9_sm-@1x.jpg,
+                  ./images/portfolio/img-9_sm-@2x.jpg, ./images/portfolio/img-9_md-@1x.jpg,
+                  ./images/portfolio/img-9_md-@2x.jpg, ./images/portfolio/img-9_lg-@1x.jpg,
+                  ./images/portfolio/img-9_lg-@2x.jpg " sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  src="./images/portfolio/img-9_sm-@1x.jpg" alt="Чоловік працює на макбук" " />
                   <div class="overlay__item">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -392,7 +379,7 @@
 
     <!-- footer -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__container container">
         <div class="footer__contact">
           <a class="logo logo__footer" href="./index.html"
@@ -476,9 +463,9 @@
           </ul>
         </div>
         <div class="subscription">
+          <span class="subscription__title">Підпишіться на розсилку</span>
           <form class="subscription_form" action="subscription_form">
             <label class="subscription__lable">
-              <span class="subscription__title">Підпишіться на розсилку</span>
               <input
                 class="subscription__input"
                 name="email"
@@ -496,7 +483,49 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+
+    <!-- mobile menu -->
+
+    <div class="menu js-menu-container" id="mobile-menu">
+      <button class="menu-button js-close-menu">
+        <svg class="menu__svg" width="40" height="40">
+          <use href="./images/icons.svg#close-menu"></use>
+        </svg>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
+        <li class="menu__item">
+          <a href="./portfolio.html" class="menu__link menu__link-current">Портфоліо</a>
+        </li>
+        <li class="menu__item"> <a href="" class="menu__link">Контакти</a></li>
+      </ul>
+      <ul class="menu__contacts">
+        <li class="menu__contacts-item">
+          <a class="menu__contacts-phone" href="tel:+380961111111"> +38 096 111 11 11 </a>
+        </li>
+        <li class="menu__contacts-item">
+          <a class="menu__contacts-mail" href="mailto:info@devdtudio.com"> info@devstudio.com </a>
+        </li>
+      </ul>
+
+      <ul class="menu__socials">
+        <li class="menu__socials-item"><a href="" class="menu__socials-link">Instagram</a></li>
+        <li class="menu__socials-item"><a href="" class="menu__socials-link">Twitter</a></li>
+        <li class="menu__socials-item"><a href="" class="menu__socials-link">Facebook</a></li>
+        <li class="menu__socials-item"><a href="" class="menu__socials-link">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <!-- mobile menu script -->
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

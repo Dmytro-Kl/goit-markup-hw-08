@@ -20,49 +20,62 @@
   <body class="page">
     <!----- header ----->
 
-    <!-- <header class="header">
-      <nav class="nav container">
+    <header class="header">
+      <div class="header__container container">
         <a class="logo" href="./index.html">Web<span class="logo__black">Studio</span></a>
 
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link current" href="./index.html">Студія</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">Контакти</a>
-          </li>
-        </ul>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link current" href="./index.html">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакти</a>
+            </li>
+          </ul>
 
-        <ul class="nav__list nav__list--contact">
-          <li class="nav__item">
-            <a class="nav__contact" href="info@devstudio.com">
-              <svg class="nav__icons" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__contact" href="tel:+380961111111">
-              <svg class="nav__icons" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header> -->
+          <ul class="nav__list nav__list--contact">
+            <li class="nav__item">
+              <a class="nav__contact" href="info@devstudio.com">
+                <svg class="nav__icons" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__contact" href="tel:+380961111111">
+                <svg class="nav__icons" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          type="button"
+          class="menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-btn__svg" width="40" height="40">
+            <use href="./images/icons.svg#open-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
 
     <!----- main ----->
 
     <main>
       <!----- Hero ----->
 
-      <!-- <section class="hero section">
+      <section class="hero section">
         <div class="container">
           <h1 class="hero__title">
             Ефективні рішення для <br />
@@ -70,11 +83,11 @@
           </h1>
           <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!----- Features ----->
 
-      <!-- <section class="features section">
+      <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="features__list">
@@ -128,11 +141,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!----- Work ----->
 
-      <!-- <section class="work section">
+      <section class="work section">
         <div class="container">
           <h2 class="work__titel">Чим ми займаємося</h2>
           <ul class="work__list">
@@ -167,11 +180,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!----- Team ----->
 
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
 
@@ -477,11 +490,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!----- Customers ----->
 
-      <!-- <section class="customers section">
+      <section class="customers section">
         <div class="container">
           <h2 class="customers__title">Постійні клієнти</h2>
           <ul class="customers__list">
@@ -565,7 +578,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!----- footer ----->
@@ -741,6 +754,53 @@
         </form>
       </div>
     </div>
+
+    <!-- mobile menu -->
+
+    <div class="menu js-menu-container" id="mobile-menu">
+      <button class="menu-button js-close-menu">
+        <svg class="menu__svg" width="40" height="40">
+          <use href="./images/icons.svg#close-menu"></use>
+        </svg>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="./index.html" class="menu__link menu__link-current">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="menu__contacts">
+        <li class="menu__contacts-item">
+          <a class="menu__contacts-phone" href="tel:+380961111111"> +38 096 111 11 11 </a>
+        </li>
+        <li class="menu__contacts-item">
+          <a class="menu__contacts-mail" href="mailto:info@devdtudio.com"> info@devstudio.com </a>
+        </li>
+      </ul>
+
+      <ul class="menu__socials">
+        <li class="menu__socials-item"><a href="" class="menu__socials-link">Instagram</a></li>
+        <li class="menu__socials-item"><a href="" class="menu__socials-link">Twitter</a></li>
+        <li class="menu__socials-item"><a href="" class="menu__socials-link">Facebook</a></li>
+        <li class="menu__socials-item"><a href="" class="menu__socials-link">LinkedIn</a></li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+
+    <!-- mobile menu script -->
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
