@@ -115,7 +115,6 @@ img {
 
 .logo__footer {
   margin-right: 0;
-  margin-bottom: 20px;
 }
 
 .logo__black {
@@ -795,7 +794,6 @@ address {
           justify-content: center;
   border: none;
   gap: 10px;
-  width: 50%;
   cursor: pointer;
   padding: 10px 28px;
   font-weight: 700;
@@ -1432,9 +1430,9 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -1444,9 +1442,6 @@ address {
     display: -ms-flexbox;
     display: flex;
     text-align: center;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
 }
 
