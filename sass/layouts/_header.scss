@@ -50,7 +50,6 @@
 .nav__contact {
   display: flex;
   align-items: center;
-  padding: 5px 0;
 
   fill: var(--main-txt-cl);
   font-weight: 500;
@@ -65,6 +64,12 @@
   &:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 10px;
   }
 }
 
@@ -87,10 +92,25 @@
   margin-left: 96px;
   display: block;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
     margin-left: 310px;
+  }
+}
+
+.nav__list--contact {
+  @media screen and (max-width: 1199px) {
+    .nav__item {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+        margin-top: 21px;
+      }
+    }
   }
 }
 

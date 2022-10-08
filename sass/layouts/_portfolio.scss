@@ -38,6 +38,7 @@
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .portfolio__link:hover,
@@ -54,6 +55,7 @@
 }
 
 .portfolio__item {
+  display: flex;
   max-width: 100%;
 
   @media screen and (min-width: 768px) {
@@ -67,7 +69,8 @@
 .portfolio__link {
   text-decoration: none;
   background: var(--white-text-color);
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .overlay {

@@ -86,13 +86,13 @@ p {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .logo {
   display: block;
-  padding: 16px 15px;
+  padding: 16px 0px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 24px;
@@ -102,12 +102,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    padding: 26px 15px;
+    padding: 26px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo {
-    padding: 24px 15px;
+    padding: 24px 0px;
     font-size: 26px;
     line-height: 1.1538461538;
   }
@@ -256,12 +256,11 @@ img {
 }
 
 .menu__socials-item:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
 }
 
 .menu__socials-link {
   margin: 0;
-  padding: 10px 10px;
   text-decoration: none;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -876,7 +875,6 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px 0;
   fill: var(--main-txt-cl);
   font-weight: 500;
   font-size: 12px;
@@ -890,6 +888,13 @@ address {
 .nav__contact:hover, .nav__contact:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .nav__contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 10px;
+  }
 }
 
 .nav__list .current {
@@ -910,6 +915,11 @@ address {
   margin-left: 96px;
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .nav__list--contact {
+    display: none;
+  }
+}
 @media screen and (min-width: 1200px) {
   .nav__list--contact {
     display: -webkit-box;
@@ -917,6 +927,13 @@ address {
     display: flex;
     gap: 30px;
     margin-left: 310px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .nav__list--contact .nav__item:not(:last-child) {
+    margin-bottom: 10px;
+    margin-top: 21px;
   }
 }
 
@@ -1317,6 +1334,9 @@ address {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .portfolio__link:hover,
@@ -1336,6 +1356,9 @@ address {
 }
 
 .portfolio__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -1352,7 +1375,13 @@ address {
 .portfolio__link {
   text-decoration: none;
   background: var(--white-text-color);
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .overlay {
@@ -1436,8 +1465,6 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 @media screen and (min-width: 767px) {
   .footer__container {
@@ -1451,6 +1478,9 @@ address {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
   }
 }
@@ -1464,15 +1494,26 @@ address {
   margin-bottom: 20px;
 }
 
+.footer__contact {
+  text-align: left;
+  margin-right: 70px;
+}
 @media screen and (max-width: 1199px) {
   .footer__contact {
+    margin-right: 165px;
     margin-bottom: 60px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__contact {
+    margin-right: 0;
   }
 }
 
 .footer__socials {
   text-align: center;
+  margin-left: 0;
 }
 @media screen and (max-width: 767px) {
   .footer__socials {
@@ -1481,6 +1522,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .footer__socials {
+    margin-right: auto;
     text-align: left;
   }
 }
